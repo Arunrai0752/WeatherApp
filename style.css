@@ -1,0 +1,101 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.container
+{
+    height:800px;
+    width: 100%px;
+    background: -webkit-gradient(linear, left top, right top, from(#88c3d1), to(#feb47b));
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 10px;
+}
+
+.Wind
+{
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid greenyellow;
+    border-radius: 250px;
+    position: relative;
+    left: 500px;
+    top: 20px;
+    color: rgb(255, 0, 0) ;
+    text-align: center;
+
+}
+
+.Wind span
+{
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+
+.search input
+{
+
+    height: 30px;
+    width: 300px;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    justify-content: space-around;
+    left: 430px;
+       outline:	#FF4500
+
+}
+
+.search button
+{
+
+     height: 40px;
+    width: 80px;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: transparent;
+    border-radius: 20px;
+    position: relative;
+    left: 450px;
+    cursor: pointer;
+   outline:	#FF4500
+}
+
+.temp
+{
+    position: relative;
+    top: 400px;
+    left: 500px;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background: -webkit-gradient(linear, left top, right top, from(#36d7ff), to(#FF4500));
+    border: 1px solid firebrick;
+}
+.cloud
+{
+    position: relative;
+    left: 520px;
+    bottom: 300px;
+}
+
+.cloud img
+{
+   height: 230px;
+
+}
