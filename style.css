@@ -7,9 +7,6 @@
     align-items: center;
     overflow: hidden;
 }
-
-
-
 .container
 {
     height:800px;
@@ -20,7 +17,6 @@
     border-radius: 20px;
     box-shadow: -5px -5px 10px;
 }
-
 .Wind
 {
     height: 300px;
