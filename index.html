@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <div class="search">
-            <input type="text" id="city" placeholder="Enter City Name">
-            <button onclick="getWeather()">Get Weather</button>
+    <div class="weather-card">
+        <div class="search-container">
+            <input type="text" id="city" placeholder="Search city..." autocomplete="off">
+            <button class="search-btn" onclick="getWeather()">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
 
-        <div class="temp">
-            <span>Temp: </span>
-            <span id="temp">--</span> °C
+        <img id="icon" class="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+
+        <div class="temperature" id="temp">--</div>
+        <div class="description" id="description">Search for a city</div>
+
+        <div class="details">
+            <div class="detail-item">
+                <div class="detail-icon"><i class="fas fa-wind"></i></div>
+                <div class="detail-value" id="windSpeed">--</div>
+                <div class="detail-label">Wind Speed</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-icon"><i class="fas fa-tint"></i></div>
+                <div class="detail-value" id="humidity">--</div>
+                <div class="detail-label">Humidity</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-icon"><i class="fas fa-compress-alt"></i></div>
+                <div class="detail-value" id="pressure">--</div>
+                <div class="detail-label">Pressure</div>
+            </div>
         </div>
 
-        <div class="Wind">
-            <span>Wind Speed: </span>
-            <span id="windSpeed">--</span> <span>m/s</span>
-        </div>
-
-        <div class="cloud">
-            <img id="icon" src="cloud-colorful-set-this-charming-cartoon-illustration-features-storm-cloud_198565-9214.avif" alt="Weather Icon" />
-        </div>
+        <div class="error-message" id="error"></div>
     </div>
 
     <script src="script.js"></script>
